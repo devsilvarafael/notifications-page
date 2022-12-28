@@ -11,7 +11,7 @@ export const NotificationsHeader = ({ title, newNotification }) => {
                 <Title text={title} />
                 <span className={styles.notificationCounter}>{notificationCounter}</span>
             </div>
-            <button onClick={() => setNotificationCounter(prevState => prevState + 1)}>Mark all as read</button>
+            <button className={styles.markAll} onClick={() => setNotificationCounter(prevState => prevState + 1)}>Mark all as read</button>
         </div>
     )
 }
