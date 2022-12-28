@@ -1,0 +1,22 @@
+:root {
+    /* Primary */
+    --red: hsl(1, 90%, 64%);
+    --blue: hsl(219, 85%, 26%);
+
+    /* Neutral */
+    --white: hsl(0, 0%, 100%);
+    --very-light-grayish-blue: hsl(210, 60%, 98%); /* Notification background */
+    --light-grayish-blue-1: hsl(211, 68%, 94%);
+    --light-grayish-blue-2: hsl(205, 33%, 90%);
+    --grayish-blue: hsl(219, 14%, 63%); /* Maybe, text color */
+    --dark-grayish-blue: hsl(219, 12%, 42%); /* Maybe, post name */
+    --very-dark-blue: hsl(224, 21%, 14%); /* Notification Counter */
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1rem;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
