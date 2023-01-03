@@ -1,6 +1,6 @@
 .bullet {
     display: inline;
-    margin-left: 0.5rem;
+    margin-left: 0.3rem;
     position: relative;
 }
 
@@ -8,6 +8,4 @@
     content: "•";
     position: absolute;
     color: var(--red);
-    width: 40px;
-    height: 40px;
 }
