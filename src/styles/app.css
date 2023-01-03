@@ -18,7 +18,7 @@ button {
 .content {
     width: 1400px;
     margin-top: 2rem;
-    max-width: 1400px;
+    max-width: 700px;
     padding: 1.5rem;
 
     background-color: var(--white);
