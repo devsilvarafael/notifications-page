@@ -18,7 +18,7 @@ export const Notification = ({ user, post, markAsRead }) => {
     // UseEffect to remove bullet on click Mark All as Read - needs improvements
     useEffect(() => {
         console.log('Rendering - Notification')
-        removeBullet(post)
+        removeBullet()
     }, [post.status])
 
     const { alternateNotificationStatus } = useNotificationContext();
