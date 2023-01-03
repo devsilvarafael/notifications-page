@@ -1,0 +1,35 @@
+.notificationPost {
+    margin-left: 1rem;
+}
+
+.username {
+    font-weight: 600;
+    letter-spacing: -1.3px;
+    color: var(--very-dark-blue);
+
+}
+
+.username, .action {
+    margin-right: 0.5rem;
+}
+
+
+
+.description {
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.description, .action {
+    color: var(--dark-grayish-blue);
+}
+
+.time {
+    color: var(--grayish-blue);
+    margin-top: 5px;
+    letter-spacing: -1px;
+}
+
+.action, time {
+    line-height: 1.5rem;
+}
