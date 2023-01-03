@@ -19,4 +19,8 @@ button {
     width: 1400px;
     margin-top: 2rem;
     max-width: 1400px;
+    padding: 1.5rem;
+
+    background-color: var(--white);
+    border-radius: 0.5rem;
 }
