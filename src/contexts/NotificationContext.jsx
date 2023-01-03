@@ -28,8 +28,6 @@ export const GlobalNotificationContext = ({ children }) => {
         const updatedNotifications = notifications.map(notification => ({ ...notification, status: false }))
 
         setNotifications(updatedNotifications);
-
-        console.log(notifications)
     }
 
     return (
