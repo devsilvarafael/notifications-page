@@ -1,6 +1,9 @@
 # notifications-page
 This repository is a solution of "notifications-page" challenge from front-end mentor.
 
+#### About
+Notifications page, after clicking on one, or the button "Mark all as read", notification(s) have your status property changed to false and the UI is updated.
+
 #### Used Technologies
 > ReactJS
 
