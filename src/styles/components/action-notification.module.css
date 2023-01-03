@@ -1,0 +1,16 @@
+.message {
+    margin-top: 0.5rem;
+    padding: 1rem;
+    outline: 1px solid var(--light-grayish-blue-2);
+    color: var(--dark-grayish-blue);
+    line-height: 1.5rem;
+}
+
+.pictureContainer {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.picture {
+    max-width: 100%;
+}
