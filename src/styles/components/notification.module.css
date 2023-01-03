@@ -1,0 +1,52 @@
+.notification {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    padding: 1rem;
+    margin-top: 0.5rem;
+    background-color: var(--very-light-grayish-blue);
+}
+
+.containerAvatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+
+    overflow: hidden;
+}
+
+.userAvatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.notificationPost {
+    margin-left: 1rem;
+}
+
+.username {
+    font-weight: 600;
+    letter-spacing: -1.3px;
+    color: var(--very-dark-blue);
+
+}
+
+.username, .description {
+    margin-right: 0.5rem;
+}
+
+.type {
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.description, .type {
+    color: var(--dark-grayish-blue);
+}
+
+.time {
+    color: var(--grayish-blue);
+    margin-top: 5px;
+}

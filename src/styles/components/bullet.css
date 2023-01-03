@@ -1,0 +1,13 @@
+.bullet {
+    display: inline;
+    margin-left: 0.5rem;
+    position: relative;
+}
+
+.bullet::before {
+    content: "•";
+    position: absolute;
+    color: var(--red);
+    width: 40px;
+    height: 40px;
+}
