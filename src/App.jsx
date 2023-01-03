@@ -1,12 +1,15 @@
 import "./styles/app.css";
 
-import {NotificationsHeader} from "./components/NotificationsHeader.jsx";
+import {GlobalNotificationContext, useNotificationContext} from "./contexts/NotificationContext.jsx";
+import {NotificationViewer} from "./components/sections/NotificationViewer.jsx";
 
 function App() {
     return (
-        <div className={"content"}>
-            <NotificationsHeader title={"Notifications"} newNotification={3}/>
-        </div>
+        <GlobalNotificationContext >
+            <div className={"content"}>
+                <NotificationViewer />
+            </div>
+        </GlobalNotificationContext>
     )
 }
 

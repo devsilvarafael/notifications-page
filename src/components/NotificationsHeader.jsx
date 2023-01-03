@@ -1,17 +1,19 @@
-import {Title} from "./Title.jsx";
+import { Title } from "./Title.jsx";
+import { useNotificationContext } from "../contexts/NotificationContext.jsx";
 
 import styles from "../styles/components/notification-header.module.css";
-import {useState} from "react";
-export const NotificationsHeader = ({ title, newNotification }) => {
-    const [notificationCounter, setNotificationCounter] = useState(0);
+
+export const NotificationsHeader = ({ title }) => {
+    const { notifications, markAllNotificationsAsRead } = useNotificationContext();
+    const unreadNotifications = notifications.filter(notification => notification.status === true)
 
     return (
         <div className={styles.header}>
             <div className={styles.notification}>
-                <Title text={title} />
-                <span className={styles.notificationCounter}>{notificationCounter}</span>
+                <Title text={title}/>
+                <span className={styles.notificationCounter}>{unreadNotifications.length}</span>
             </div>
-            <button className={styles.markAll} onClick={() => setNotificationCounter(prevState => prevState + 1)}>Mark all as read</button>
+            <button className={styles.markAll} onClick={markAllNotificationsAsRead}>Mark all as read</button>
         </div>
     )
 }
