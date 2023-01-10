@@ -24,7 +24,7 @@ export const Notification = ({user, post, markAsRead}) => {
 
 
     return (
-        <div className={styles.notification} onClick={() => alternateNotificationStatus(markAsRead)}>
+        <div className={styles.notification} style={{ backgroundColor: unread ? "var(--very-light-grayish-blue)" : "white"}} onClick={() => alternateNotificationStatus(markAsRead)}>
             <div className={styles.postContainer}>
                 <Avatar url={user.avatar} alt={user.name}/>
 
