@@ -11,7 +11,7 @@ export const ActionNotification = ({ children, type, picture }) => {
         case "comment-picture" :
             return (
                 <div className={styles.pictureContainer}>
-                    <img src={picture} className={styles.picture}/>
+                    <img src={picture} className={styles.picture} alt={"picture"}/>
                 </div>
 
             )

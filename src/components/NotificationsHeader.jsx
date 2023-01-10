@@ -16,12 +16,12 @@ export const NotificationsHeader = ({ title }) => {
     }
 
     return (
-        <div className={styles.header}>
+        <header className={styles.header}>
             <div className={styles.notification}>
                 <Title text={title}/>
                 <span className={styles.notificationCounter}>{unreadNotifications.length}</span>
             </div>
             <button className={styles.markAll} onClick={haveUnreadNotifications}>Mark all as read</button>
-        </div>
+        </header>
     )
 }
