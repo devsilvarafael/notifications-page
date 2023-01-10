@@ -1,11 +1,8 @@
 .bullet {
     display: inline;
-    margin-left: 0.3rem;
-    position: relative;
 }
 
 .bullet::before {
     content: "•";
-    position: absolute;
     color: var(--red);
 }

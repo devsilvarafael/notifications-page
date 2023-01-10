@@ -4,13 +4,24 @@
     outline: 1px solid var(--light-grayish-blue-2);
     color: var(--dark-grayish-blue);
     line-height: 1.5rem;
+    border-radius: 0.2rem;
 }
 
 .pictureContainer {
-    max-width: 50px;
-    max-height: 50px;
+    max-width: 3.12rem;
+    max-height: 3.12rem;
 }
 
 .picture {
     max-width: 100%;
+}
+
+@media (max-width: 600px) {
+    .message {
+        line-height: normal;
+    }
+
+    .picture {
+        max-width: 100%;
+    }
 }

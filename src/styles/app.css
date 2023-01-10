@@ -16,11 +16,18 @@ button {
 }
 
 .content {
-    width: 1400px;
     margin-top: 2rem;
     max-width: 700px;
     padding: 1.5rem;
 
     background-color: var(--white);
     border-radius: 0.5rem;
+}
+
+@media (max-width: 600px) {
+    .content {
+        margin-top: 0;
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
 }

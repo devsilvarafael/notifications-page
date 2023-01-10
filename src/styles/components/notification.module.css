@@ -12,3 +12,10 @@
 .postContainer {
     display: flex;
 }
+
+@media (max-width: 600px) {
+    .notification {
+        align-items: flex-start;
+        max-width: 375px;
+    }
+}
