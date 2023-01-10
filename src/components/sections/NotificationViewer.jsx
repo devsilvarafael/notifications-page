@@ -11,14 +11,14 @@ export const NotificationViewer = () => {
 
     return (
         <Fragment>
-            <div className={styles.content}>
+            <main className={styles.content}>
                 <NotificationsHeader title={"Notifications"}/>
                 {notifications.map((notification, index) => (
                     <Fragment key={notification.id}>
                         <Notification user={users[index]} post={notification} markAsRead={notification}/>
                     </Fragment>
                 ))}
-            </div>
+            </main>
             <Footer />
         </Fragment>
 

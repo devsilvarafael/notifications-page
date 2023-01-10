@@ -24,7 +24,7 @@ export const Notification = ({user, post, markAsRead}) => {
 
 
     return (
-        <main className={styles.notification} style={{ backgroundColor: unread ? "var(--very-light-grayish-blue)" : "white"}} onClick={() => alternateNotificationStatus(markAsRead)}>
+        <div className={styles.notification} style={{ backgroundColor: unread ? "var(--very-light-grayish-blue)" : "white"}} onClick={() => alternateNotificationStatus(markAsRead)}>
             <div className={styles.postContainer}>
                 <Avatar url={user.avatar} alt={user.name}/>
 
@@ -40,6 +40,6 @@ export const Notification = ({user, post, markAsRead}) => {
             </div>
 
             {post.picture && <ActionNotification type={post.action} picture={post.picture}/>}
-        </main>
+        </div>
     )
 }
