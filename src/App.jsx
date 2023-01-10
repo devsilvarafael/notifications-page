@@ -6,9 +6,7 @@ import {NotificationViewer} from "./components/sections/NotificationViewer.jsx";
 function App() {
     return (
         <GlobalNotificationContext >
-            <div className={"content"}>
                 <NotificationViewer />
-            </div>
         </GlobalNotificationContext>
     )
 }
