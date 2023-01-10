@@ -1,6 +1,16 @@
 # notifications-page
 This repository is a solution of "notifications-page" challenge from front-end mentor.
 
+### How to install?
+
+```bash
+# install dependencies
+npm install
+    
+# after in the development server:
+npm run dev
+```
+
 #### About
 Notifications page, after clicking on one, or the button "Mark all as read", notification(s) have your status property changed to false and the UI is updated.
 
