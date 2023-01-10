@@ -9,12 +9,12 @@ export const NotificationViewer = () => {
     return (
         <div>
             <NotificationsHeader title={"Notifications"}/>
-            {notifications.length > 0 ? notifications.map((notification, index) => (
+            {notifications.map((notification, index) => (
                 <Fragment key={notification.id}>
                     <Notification user={users[index]} post={notification} markAsRead={notification}/>
                 </Fragment>
 
-            )) : <div>Não há notificações</div>}
+            ))}
         </div>
     )
 }

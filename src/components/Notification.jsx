@@ -12,7 +12,7 @@ export const Notification = ({user, post, markAsRead}) => {
     const [unread, setUnread] = useState(post.status)
     const {alternateNotificationStatus} = useNotificationContext();
     const removeBullet = () => {
-        if (post.status === false) {
+        if (!post.status) {
             setUnread(false)
         }
     }
@@ -35,6 +35,7 @@ export const Notification = ({user, post, markAsRead}) => {
                     time={post.time}
                     read={unread}
                     message={post.message}
+                    picture={post.picture}
                 />
             </div>
 

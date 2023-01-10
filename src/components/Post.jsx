@@ -17,11 +17,11 @@ const checkNotificationType = (type) => {
     }
 
     if (type === "left-group") {
-        return "has left your group";
+        return "left your group";
     }
 
     if (type === "sent-message") {
-        return "has sent you a private message"
+        return "sent you a private message"
     }
 
     if (type === "comment-picture") {
@@ -32,16 +32,20 @@ const checkNotificationType = (type) => {
 
 export const Post = ({username, action, description, time, read, message}) => {
     return (
-        <div className={styles.notificationPost}>
-            <span className={styles.username}>{username}</span>
-            <span className={styles.action}>{checkNotificationType(action)}</span>
-            <span className={styles.description}>{description}</span>
+        <div className={styles.post}>
+            <div className={styles.notification}>
+                <span className={styles.username}>{username}</span>
+                <span className={styles.action}>{checkNotificationType(action)}</span>
+                <span className={styles.description}>{description}</span>
 
-            {read && <Bullet/>}
+                {read && <Bullet/>}
+            </div>
 
-            <p className={styles.time}>{time}</p>
+            <div>
+                <span className={styles.time}>{time}</span>
 
-            {message && <ActionNotification type={action}>{message}</ActionNotification>}
+                {message && <ActionNotification type={action}>{message}</ActionNotification>}
+            </div>
         </div>
     )
 }
