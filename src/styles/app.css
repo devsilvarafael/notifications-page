@@ -14,11 +14,3 @@ button {
 
     cursor: pointer;
 }
-
-@media (max-width: 600px) {
-    .content {
-        margin-top: 0;
-        padding: 1rem;
-        font-size: 0.9rem;
-    }
-}

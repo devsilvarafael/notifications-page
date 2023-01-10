@@ -8,3 +8,9 @@
 a {
     color: #1616e3;
 }
+
+@media (max-width: 600px) {
+    .footer {
+        font-size: 0.9rem;
+    }
+}
