@@ -2,7 +2,7 @@ import styles from "../styles/components/footer.module.css";
 
 export const Footer = () => {
     return (
-        <footer className={styles.footer}>
+        <footer className={styles.footer} role={"Front-end mentor and solver"}>
             <p>
                 Challenge by{" "}
                 <a

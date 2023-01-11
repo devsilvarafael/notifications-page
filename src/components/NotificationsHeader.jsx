@@ -16,7 +16,7 @@ export const NotificationsHeader = ({ title }) => {
     }
 
     return (
-        <header className={styles.header}>
+        <header className={styles.header} role={"Number of unread notifications"}>
             <div className={styles.notification}>
                 <Title text={title}/>
                 <span className={styles.notificationCounter}>{unreadNotifications.length}</span>

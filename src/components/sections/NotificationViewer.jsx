@@ -11,7 +11,7 @@ export const NotificationViewer = () => {
 
     return (
         <Fragment>
-            <main className={styles.content}>
+            <main className={styles.content} role={"main"}>
                 <NotificationsHeader title={"Notifications"}/>
                 {notifications.map((notification, index) => (
                     <Fragment key={notification.id}>
